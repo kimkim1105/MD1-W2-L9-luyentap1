@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+Nhập số phút nội mạng: <br>
+<input type="text" id="d1"><br>
+Nhập số phút ngoại mạng: <br>
+<input type="text" id="d2"><br>
+<button onclick="tinh()">Tính</button>
+<p id="rs"></p>
+</body>
+</html>
+<script>
+    function tinh(){
+        let d1 = +Math.ceil(document.getElementById("d1").value);
+        let d2 = +Math.ceil(document.getElementById("d2").value);
+        let m = d1*1000 + d2*1650;
+        document.getElementById("rs").innerHTML = ("Tiền cước điện thoại là: "+m)
+    }
+</script>

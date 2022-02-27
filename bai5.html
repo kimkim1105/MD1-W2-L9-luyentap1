@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+Điểm bài kiểm tra: <input type="text" id="st1"><br>
+Điểm thi giữa kỳ: <input type="text" id="st2"><br>
+Điểm thi cuối kỳ: <input type="text" id="st3"><br>
+<button onclick="tinh()">Xếp hạng</button>
+<p id="rs"></p>
+</body>
+</html>
+<script>
+    function tinh(){
+        let a = +document.getElementById("st1").value;
+        let b = +document.getElementById("st2").value;
+        let c = +document.getElementById("st3").value;
+        let x = (a*0.1+b*0.3+c*0.6);
+        if (x<6.5){
+            e = "Học sinh trung bình";
+        }else if (x>=8.0){
+            e = "Học sinh giỏi";
+        }else {e = "Học sinh tiên tiến"}
+        document.getElementById("rs").innerHTML = (e)
+    }
+</script>

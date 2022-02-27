@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+Nhập số nguyên a: <input type="text" id="a"><br>
+Nhập số nguyên b: <input type="text" id="b"><br>
+Nhập số nguyên c: <input type="text" id="c"><br>
+<button onclick="tinh()">Kiểm tra</button>
+<p id="rs"></p>
+</body>
+</html>
+<script>
+    function tinh(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        max = a;
+        if (max<b){
+            max = b;
+        }else{
+            if (max<c){
+                max = c;
+            }
+        }
+        document.getElementById("rs").innerHTML = ("Số nguyên lớn nhất là: "+max)
+    }
+</script>

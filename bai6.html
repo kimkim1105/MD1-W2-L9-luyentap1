@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+Nhập doanh số bán hàng: <br>
+<input type="text" id="r"><br>
+<button onclick="tinh()">Tính</button>
+<p id="rs"></p>
+</body>
+</html>
+<script>
+    function tinh(){
+        let r = +document.getElementById("r").value;
+        let h;
+        if (r>=100000000){
+            h = r*0.1
+        }else {h = r*0.02}
+        document.getElementById("rs").innerHTML = ("Hoa hồng nhận được là:"+h)
+    }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+Nhập vào số nguyên: <br>
+<input type="text" id="st"><br><br>
+<button onclick="tinh()">Kiểm tra</button>
+<p id="rs"></p>
+</body>
+</html>
+<script>
+    function tinh(){
+        let n = +document.getElementById("st").value;
+        if (n>0){
+            e = "Số nhập vào là số nguyên dương";
+        }
+        else if(n<0){
+            e = "Số nhập vào là số nguyên âm";
+        }else {e = "Số nhập vào là 0"}
+        document.getElementById("rs").innerHTML = (e);
+    }
+</script>

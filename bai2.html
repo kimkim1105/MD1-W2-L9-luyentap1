@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+Nhập số tuổi: <input type="text" id="input"><br>
+<button onclick="tinh()">Kiểm tra</button>
+<p id="rs"></p>
+</body>
+</html>
+<script>
+    function tinh(){
+        let  t = +document.getElementById("input").value;
+        if (t<16){
+            e = "Chưa đủ tuổi vào lớp 10";
+        }else {
+            e = "Đủ tuổi vào lớp 10";
+        }
+        document.getElementById("rs").innerHTML = (e)
+    }
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+Nhập vào a: <input type="text" id="a"><br>
+Nhập vào b: <input type="text" name="" id="b"><br>
+<button onclick="tinh()">Kiểm tra</button>
+<p id="rs"></p>
+</body>
+</html>
+<script>
+    function tinh(){
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        if (a%b==0){
+            e = "a chia hết cho b";
+        }else {e = "a không chia hết cho b"}
+        document.getElementById("rs").innerHTML = (e);
+    }
+</script>
